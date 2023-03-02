@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frog Image and Text</title>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			font-size: 50px;
+			text-align: center;
+			padding-top: 20%;
+		}
+		
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 80%;
+			height: auto;
+			border: 5px solid white;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<img src="frog-image.jpg" alt="Frog Image">
+	<script>
+		function changeColor() {
+			let colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+			let randomColor = colors[Math.floor(Math.random() * colors.length)];
+			document.body.style.color = randomColor;
+		}
+		setInterval(changeColor, 100);
+	</script>
+	<p>Frog</p>
+
+</body>
+</html>
